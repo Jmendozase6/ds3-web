@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<!-- Imagen -->
+![Responsive Product Page](https://www.ds3comunicaciones.com/Logo1.jpg)
 
-## Getting Started
+# Proyecto: Página de Producto Responsiva - DS3
 
-First, run the development server:
+Este proyecto es una prueba técnica para el desarrollo de una página de producto completamente responsiva, partiendo de un diseño no-responsivo existente y utilizando un código de referencia como base. El objetivo es demostrar habilidades de desarrollo front-end de nivel mid-level, aplicando buenas prácticas y tecnologías modernas.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Stack Tecnológico
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Framework:** [Next.js](https://nextjs.org/) (con App Router)
+- **Lenguaje:** [TypeScript](https://www.typescriptlang.org/)
+- **Estilos:** [Tailwind CSS](https://tailwindcss.com/)
+- **Componentes UI:** [shadcn/ui](https://ui.shadcn.com/)
+- **Linting:** ESLint
+- **Íconos:** React Icons
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Características Implementadas
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Diseño Absolutamente Responsivo:** La página se adapta fluidamente a todos los tamaños de pantalla, desde móviles pequeños hasta monitores de escritorio grandes.
+- **Enfoque Mobile-First:** El diseño se construyó desde la perspectiva móvil hacia arriba, garantizando una experiencia de usuario óptima en los dispositivos más comunes.
+- **Componentes Reutilizables:** La interfaz se ha dividido en componentes lógicos (Header, Footer, Sidebar, etc.) para una mejor mantenibilidad.
+- **Interfaz de Usuario Premium:** Se utilizó `shadcn/ui` para implementar componentes pulidos como botones, pestañas y tarjetas, logrando un acabado estético de alta calidad.
+- **Interactividad del Lado del Cliente:** Funcionalidades como la galería de imágenes, el sistema de pestañas y el menú lateral móvil se manejan con React Hooks (`useState`).
+- **Layout Moderno:** Se utiliza CSS Grid y Flexbox para crear layouts complejos y robustos (ej. sidebar + contenido principal).
 
-## Learn More
+## Cómo Ejecutar el Proyecto
 
-To learn more about Next.js, take a look at the following resources:
+1.  **Clonar el repositorio (si aplica):**
+    ```bash
+    git clone [URL_DEL_REPOSITORIO]
+    cd mi-proyecto-responsive
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2.  **Instalar dependencias:**
+    Asegúrate de tener Node.js (v18+) instalado.
+    ```bash
+    npm install
+    ```
+    o si usas Yarn:
+    ```bash
+    yarn
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3.  **Ejecutar el servidor de desarrollo:**
+    ```bash
+    npm run dev
+    ```
+    o
+    ```bash
+    yarn dev
+    ```
 
-## Deploy on Vercel
+4.  **Abrir la aplicación:**
+    Abre tu navegador y visita [http://localhost:3000](http://localhost:3000).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Estructura del Proyecto
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **/f:** Contiene las rutas y la lógica principal de la aplicación (App Router de Next.js).
+  - `page.tsx`: El componente principal de la página de producto.
+  - `globals.css`: Estilos globales de Tailwind CSS.
+- **/components/ui:** Componentes de la librería `shadcn/ui` añadidos al proyecto.
+- **/app/shared/components:** Componentes reutilizables específicos de la aplicación (Header, Footer, MobileMenu).
+- **/lib:** Utilidades, como la función `cn` de `shadcn`.
+- **/public:** Archivos estáticos (imágenes, fuentes).
