@@ -2,7 +2,7 @@
   "name": "ds3-web",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jmendozase6.github.io/ds3-web.github.io",
+  "homepage": "https://jmendozase6.github.io/ds3-web",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
