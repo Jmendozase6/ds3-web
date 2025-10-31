@@ -31,8 +31,8 @@ const nextConfig: NextConfig = {
       },
     ]
   },
-  basePath: 'ds3-web.github.io',
-  assetPrefix: 'ds3-web.github.io',
+  basePath: '/ds3-web.github.io',
+  assetPrefix: '/ds3-web.github.io',
   allowedDevOrigins: ['http://localhost:3000'],
 };
 
