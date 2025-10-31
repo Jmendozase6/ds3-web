@@ -1,7 +1,5 @@
 import type { NextConfig } from "next";
 
-const isProd = process.env.NODE_ENV === 'production';
-
 const nextConfig: NextConfig = {
   /* config options here */
   output: 'export',
@@ -34,8 +32,6 @@ const nextConfig: NextConfig = {
       },
     ]
   },
-  basePath: isProd ? '/ds3-web' : '',
-  assetPrefix: isProd ? '/ds3-web' : '',
   allowedDevOrigins: ['http://localhost:3000'],
 };
 
