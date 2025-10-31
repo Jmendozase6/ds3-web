@@ -3,6 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -30,6 +31,8 @@ const nextConfig: NextConfig = {
       },
     ]
   },
+  basePath: 'ds3-web.github.io',
+  assetPrefix: 'ds3-web.github.io',
   allowedDevOrigins: ['http://localhost:3000'],
 };
 
